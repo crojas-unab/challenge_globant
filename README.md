@@ -15,7 +15,7 @@ Estructura del Proyecto
 │   └── database.py       # Conexión e inicialización de la base de datos
 ├── requirements.txt      # Librerías necesarias para ejecutar el proyecto
 ├── README.md             # Este archivo
-├── notebook_test.ipynb   # Notebook donde se realizan algunas pruebas
+├── notebook_test.ipynb   # Notebook donde se realizan algunas pruebas en instalaciones
 
 
 
@@ -39,6 +39,25 @@ Devuelve el número de empleados contratados por departamento y puesto, dividido
 
 /metrics/departments-above-mean?year=2021
 Devuelve los departamentos que contrataron más empleados que el promedio general en el año especificado.
+
+
+Cómo ejecutar la aplicación
+
+1: Entorno local
+Clona el repositorio:
+
+https://github.com/crojas-unab/challenge_globant.git
+
+2: Instala las dependencias:
+pip install -r requirements.txt    #esto lo puedes aplicar en el notebook_test.ipynb 
+
+Ejecuta la aplicación:
+
+uvicorn app.main:app --reload    #debera ejecutarse desde la ruta de la app
+
+Accede a la API:
+
+http://localhost:8000/docs
 
 
 
